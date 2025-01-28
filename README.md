@@ -1,4 +1,4 @@
-## >>> import diegor
+## >>> import diegorusso
 
 - 🐍 I’m a [CPython](https://github.com/python/cpython/) contributor and part of Triage Team.
 - 🏢 I'm a Principal Software Engineer at [Arm Ltd](https://www.arm.com)
@@ -11,7 +11,7 @@
 
   
 ```
->>> import diegor
+>>> import diegorusso as diegor
 >>> diegor.smile()
 😄
 ```
