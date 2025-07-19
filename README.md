@@ -20,6 +20,11 @@
 - **EuroPython 2023: Python on Arm Architecture**  
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2023/ep2023_python_on_arm.pdf) | [Recording](https://www.youtube.com/watch?v=nYf7r0lkTIs)
 
+## 🎧 Podcasts
+
+- **2025 - Intervista Pythonista: Runtime e Interpreter con un Core Developer! #66 ( :it: )**  
+  [YouTube](https://www.youtube.com/watch?v=Xx09D359mR4)
+
   
 ```
 >>> import diegorusso as diegor
