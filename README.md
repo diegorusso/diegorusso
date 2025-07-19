@@ -1,6 +1,3 @@
-#
-## 👋 About Me
-
 - :snake: I’m a [CPython](https://github.com/python/cpython/) Core Developer
 - :office: I work as Principal Software Engineer at [Arm Ltd](https://www.arm.com)
 - :computer: I'm part of the Runtimes team where my main goal is to make CPython :snake: and its ecosystem work flawlessly for developers around the world on Arm platforms
@@ -27,9 +24,10 @@
   [YouTube](https://www.youtube.com/watch?v=Xx09D359mR4) | [Spotify](https://creators.spotify.com/pod/profile/marco-santoni/episodes/Runtime-e-Interpreter-con-un-Core-Developer--66-e35gcjl) | [Apple Podcast](https://podcasts.apple.com/lu/podcast/runtime-e-interpreter-con-un-core-developer-66/id1561566952?i=1000717070862)
 
   
-```
+```python
 >>> import diegorusso as diegor
+>>> diegor.talks()
+['EuroPython', 'Microsoft Build', 'Podcast']
 >>> diegor.smile()
 😄
 ```
-
