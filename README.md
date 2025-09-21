@@ -13,8 +13,8 @@
 
 ## 🎤 Conference Talks
 
-- **EuroPython 2025: Exploring the CPython JIT**  
-  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf) | Recording: _coming soon_
+- **EuroPython 2025/PyCon UK 2025: Exploring the CPython JIT**  
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf) | [PyCon UK 2025](https://youtu.be/5-AA7-fHYYM?si=3jILxr9B1Coeq3-F), _EuroPython 2025 coming soon_
 - **Microsoft Build 2024: Run PyTorch natively on Windows on Arm using GitHub runners**  
   [Session page](https://build.microsoft.com/en-US/sessions/ODFP974) | [YouTube](https://www.youtube.com/watch?v=uhGg7wb6jV4)
 - **EuroPython 2023: Python on Arm Architecture**  
@@ -31,7 +31,7 @@
 ```python
 >>> import diegorusso as diegor
 >>> diegor.talks()
-['EuroPython', 'Microsoft Build', 'Podcast']
+['PyCon UK', 'EuroPython', 'Microsoft Build', 'Podcast']
 >>> diegor.smile()
 😄
 ```
