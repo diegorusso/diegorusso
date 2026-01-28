@@ -7,7 +7,7 @@
 - :page_facing_up: My CV can be found [here](https://www.diegor.it/cv/)
 - :speaking_head: You can talk to me in Italian :it:, Spanish :argentina:, and English :uk:
 - :memo: I used to [blog](https://www.diegor.it/posts/) but I stopped many years ago. :hourglass:
-- :zap: I use some social networks: [Linkedin](https://www.linkedin.com/in/diegor/), [bsky](http://bsky.app/profile/diegor.it), [X](https://x.com/diegor), and [Instagram](https://www.instagram.com/diego.russ0/)
+- :zap: I use some social networks: [Linkedin](https://www.linkedin.com/in/diegor/), [bsky](http://bsky.app/profile/diegor.it), [X](https://x.com/diegor), and [Instagram](https://www.instagram.com/diegor.it/)
 - :yin_yang: I practice Wing Chun
 - :male_sign: Pronouns: he/him/his
 
