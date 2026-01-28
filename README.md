@@ -13,6 +13,8 @@
 
 ## 🎤 Conference Talks
 
+- **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código**  
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/python_sdq_python_por_dentro.pdf) | [YouTube](https://www.youtube.com/watch?v=PbLSttImQ3k)
 - **EuroPython 2025/PyCon UK 2025: Exploring the CPython JIT**  
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf) | [PyCon UK 2025](https://youtu.be/5-AA7-fHYYM?si=3jILxr9B1Coeq3-F), [EuroPython 2025](https://youtu.be/5si4zkAngpA?si=cxYDkwUK7w-r1jJQ)
 - **Microsoft Build 2024: Run PyTorch natively on Windows on Arm using GitHub runners**  
