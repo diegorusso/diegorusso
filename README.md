@@ -13,27 +13,29 @@
 
 ## 🎤 Conference Talks
 
-- **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código**  
+- **PyCon Italia 2026 Keynote: From "Fast Enough" to "Fast by Design" - The Evolution of CPython Performance**<br>
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/pycon_italia_2026-evolution_of_cpython_performance.pdf) | *YouTube Coming soon...*
+- **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/python_sdq_python_por_dentro.pdf) | [YouTube](https://www.youtube.com/watch?v=PbLSttImQ3k)
-- **EuroPython 2025/PyCon UK 2025: Exploring the CPython JIT**  
+- **EuroPython 2025/PyCon UK 2025: Exploring the CPython JIT**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf) | [PyCon UK 2025](https://youtu.be/5-AA7-fHYYM?si=3jILxr9B1Coeq3-F), [EuroPython 2025](https://youtu.be/5si4zkAngpA?si=cxYDkwUK7w-r1jJQ)
-- **Microsoft Build 2025: Run PyTorch natively on Windows on Arm using GitHub runners**  
+- **Microsoft Build 2025: Run PyTorch natively on Windows on Arm using GitHub runners**<br>
   [Session page](https://build.microsoft.com/en-US/sessions/ODFP974) | [YouTube](https://www.youtube.com/watch?v=uhGg7wb6jV4)
-- **EuroPython 2023: Python on Arm Architecture**  
+- **EuroPython 2023: Python on Arm Architecture**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2023/ep2023_python_on_arm.pdf) | [Recording](https://www.youtube.com/watch?v=nYf7r0lkTIs)
 
 ## 🎧 Podcasts
 
-- **2025 - Intervista Pythonista: Runtime e Interpreter con un Core Developer! #66 ( :it: )**  
+- **2025 - Intervista Pythonista: Runtime e Interpreter con un Core Developer! #66 ( :it: )**<br>
   [YouTube](https://www.youtube.com/watch?v=Xx09D359mR4) | [Spotify](https://creators.spotify.com/pod/profile/marco-santoni/episodes/Runtime-e-Interpreter-con-un-Core-Developer--66-e35gcjl) | [Apple Podcast](https://podcasts.apple.com/lu/podcast/runtime-e-interpreter-con-un-core-developer-66/id1561566952?i=1000717070862)
-- **2024 - Arm Innovation Coffee: GitHub Arm-hosted Runners with Larissa Fortuna and Diego Russo**  
+- **2024 - Arm Innovation Coffee: GitHub Arm-hosted Runners with Larissa Fortuna and Diego Russo**<br>
   [YouTube](https://www.youtube.com/watch?v=CMO4rL2msoQ)
 
-  
+
 ```python
 >>> import diegorusso as diegor
 >>> diegor.talks()
-['PyCon UK', 'EuroPython', 'Microsoft Build', 'Podcast']
+['PyCon Italia', 'PyCon UK', 'EuroPython', 'Microsoft Build', 'Podcast']
 >>> diegor.smile()
 😄
 ```
