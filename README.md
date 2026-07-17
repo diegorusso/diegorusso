@@ -13,6 +13,8 @@
 
 ## 🎤 Conference Talks
 
+### 2026
+
 - **EuroPython 2026: Update on the CPython JIT - What to Expect in 3.15**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-update_on_the_cpython_jit-what_to_expect_in_315.pdf) | *YouTube Coming soon...*
 - **EuroPython 2026: Python on WoA - Ecosystem Enablement Update**<br>
@@ -21,10 +23,16 @@
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/pycon_italia_2026-evolution_of_cpython_performance.pdf) | *YouTube Coming soon...*
 - **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/python_sdq_python_por_dentro.pdf) | [YouTube](https://www.youtube.com/watch?v=PbLSttImQ3k)
+
+### 2025
+
 - **EuroPython 2025/PyCon UK 2025: Exploring the CPython JIT**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2025/ep2025_exploring_the_cpython_jit.pdf) | [PyCon UK 2025](https://youtu.be/5-AA7-fHYYM?si=3jILxr9B1Coeq3-F), [EuroPython 2025](https://youtu.be/5si4zkAngpA?si=cxYDkwUK7w-r1jJQ)
 - **Microsoft Build 2025: Run PyTorch natively on Windows on Arm using GitHub runners**<br>
   [Session page](https://build.microsoft.com/en-US/sessions/ODFP974) | [YouTube](https://www.youtube.com/watch?v=uhGg7wb6jV4)
+
+### 2023
+
 - **EuroPython 2023: Python on Arm Architecture**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2023/ep2023_python_on_arm.pdf) | [Recording](https://www.youtube.com/watch?v=nYf7r0lkTIs)
 
