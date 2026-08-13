@@ -1,0 +1,82 @@
+From 4bb546d6e28bd3efa4587778c3a16c693a4992f6 Mon Sep 17 00:00:00 2001
+From: Diego Russo <diego.russo@arm.com>
+Date: Thu, 6 Aug 2026 19:00:34 +0100
+Subject: [PATCH] Demo: add glob.rglob
+
+Change-Id: I9228485a5a50018504f57b5dca963e8a25b32989
+---
+ Lib/glob.py           |  7 ++++++-
+ Lib/test/test_glob.py | 32 ++++++++++++++++++++++++++++++++
+ 2 files changed, 38 insertions(+), 1 deletion(-)
+
+diff --git a/Lib/glob.py b/Lib/glob.py
+index 07b9d3eb952..155e06f0713 100644
+--- a/Lib/glob.py
++++ b/Lib/glob.py
+@@ -11,7 +11,7 @@
+ import sys
+ 
+ 
+-__all__ = ["glob", "iglob", "escape", "translate"]
++__all__ = ["glob", "rglob", "iglob", "escape", "translate"]
+ 
+ def glob(pathname, *, root_dir=None, dir_fd=None, recursive=False,
+         include_hidden=False):
+@@ -43,6 +43,11 @@ def glob(pathname, *, root_dir=None, dir_fd=None, recursive=False,
+     return list(iglob(pathname, root_dir=root_dir, dir_fd=dir_fd, recursive=recursive,
+                       include_hidden=include_hidden))
+ 
++def rglob(pathname, *, root_dir=None, dir_fd=None, include_hidden=False):
++    """Return paths matching pathname with recursive globbing enabled."""
++    return glob(pathname, root_dir=root_dir, dir_fd=dir_fd, recursive=True,
++                include_hidden=include_hidden)
++
+ def iglob(pathname, *, root_dir=None, dir_fd=None, recursive=False,
+           include_hidden=False):
+     """Return an iterator which yields the paths matching a `pathname` pattern.
+diff --git a/Lib/test/test_glob.py b/Lib/test/test_glob.py
+index 9e4e82b2542..7bbd0ad2c36 100644
+--- a/Lib/test/test_glob.py
++++ b/Lib/test/test_glob.py
+@@ -346,6 +346,38 @@ def test_recursive_glob(self):
+             eq(glob.glob('**', recursive=True, include_hidden=True),
+                [join(*i) for i in full+rec])
+ 
++    def test_rglob(self):
++        self.assertIn('rglob', glob.__all__)
++
++        pattern = self.norm('**', '*F')
++        self.assertCountEqual(
++            glob.rglob(pattern),
++            glob.glob(pattern, recursive=True),
++        )
++
++        pattern = self.norm('*')
++        self.assertCountEqual(
++            glob.rglob(pattern),
++            glob.glob(pattern, recursive=True),
++        )
++
++        pattern = os.path.join('**', '*F')
++        self.assertCountEqual(
++            glob.rglob(pattern, root_dir=self.tempdir),
++            glob.glob(pattern, root_dir=self.tempdir, recursive=True),
++        )
++        self.assertCountEqual(
++            glob.rglob('**', root_dir=self.tempdir, include_hidden=True),
++            glob.glob('**', root_dir=self.tempdir, recursive=True,
++                      include_hidden=True),
++        )
++
++        if self.dir_fd is not None:
++            self.assertCountEqual(
++                glob.rglob(pattern, dir_fd=self.dir_fd),
++                glob.glob(pattern, dir_fd=self.dir_fd, recursive=True),
++            )
++
+     def test_glob_non_directory(self):
+         eq = self.assertSequencesEqual_noorder
+         eq(self.rglob('EF'), self.joins(('EF',)))
+-- 
+2.53.0
+

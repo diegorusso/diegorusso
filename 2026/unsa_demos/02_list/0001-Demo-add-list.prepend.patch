@@ -1,0 +1,125 @@
+From 371f569be7aa3200bb4e17b53f48afc863b31e5d Mon Sep 17 00:00:00 2001
+From: Diego Russo <diego.russo@arm.com>
+Date: Thu, 6 Aug 2026 19:00:41 +0100
+Subject: [PATCH] Demo: add list.prepend
+
+Change-Id: I58ff4008cbff4ca5fe061662431167533bfa7195
+---
+ Lib/test/test_list.py         | 19 +++++++++++++++++++
+ Objects/clinic/listobject.c.h | 26 +++++++++++++++++++++++++-
+ Objects/listobject.c          | 21 +++++++++++++++++++++
+ 3 files changed, 65 insertions(+), 1 deletion(-)
+
+diff --git a/Lib/test/test_list.py b/Lib/test/test_list.py
+index 44ecd62d673..4fff9400459 100644
+--- a/Lib/test/test_list.py
++++ b/Lib/test/test_list.py
+@@ -45,6 +45,25 @@ def test_basic(self):
+         x.extend(-y for y in x)
+         self.assertEqual(x, [])
+ 
++    def test_prepend(self):
++        values = []
++        self.assertIsNone(values.prepend(10))
++        self.assertEqual(values, [10])
++
++        values = [20, 30]
++        self.assertIsNone(values.prepend(10))
++        self.assertEqual(values, [10, 20, 30])
++
++        values.prepend(0)
++        self.assertEqual(values, [0, 10, 20, 30])
++
++        with self.assertRaises(TypeError):
++            values.prepend()
++        with self.assertRaises(TypeError):
++            values.prepend(1, 2)
++        with self.assertRaises(TypeError):
++            values.prepend(object=1)
++
+     def test_keyword_args(self):
+         with self.assertRaisesRegex(TypeError, 'keyword argument'):
+             list(sequence=[])
+diff --git a/Objects/clinic/listobject.c.h b/Objects/clinic/listobject.c.h
+index f3821ef5f70..7055f29cdd9 100644
+--- a/Objects/clinic/listobject.c.h
++++ b/Objects/clinic/listobject.c.h
+@@ -53,6 +53,30 @@ exit:
+     return return_value;
+ }
+ 
++PyDoc_STRVAR(list_prepend__doc__,
++"prepend($self, object, /)\n"
++"--\n"
++"\n"
++"Insert object at the beginning of the list.");
++
++#define LIST_PREPEND_METHODDEF    \
++    {"prepend", (PyCFunction)list_prepend, METH_O, list_prepend__doc__},
++
++static PyObject *
++list_prepend_impl(PyListObject *self, PyObject *object);
++
++static PyObject *
++list_prepend(PyObject *self, PyObject *object)
++{
++    PyObject *return_value = NULL;
++
++    Py_BEGIN_CRITICAL_SECTION(self);
++    return_value = list_prepend_impl((PyListObject *)self, object);
++    Py_END_CRITICAL_SECTION();
++
++    return return_value;
++}
++
+ PyDoc_STRVAR(py_list_clear__doc__,
+ "clear($self, /)\n"
+ "--\n"
+@@ -468,4 +492,4 @@ list___reversed__(PyObject *self, PyObject *Py_UNUSED(ignored))
+ {
+     return list___reversed___impl((PyListObject *)self);
+ }
+-/*[clinic end generated code: output=06c21b0bffbe8d84 input=a9049054013a1b77]*/
++/*[clinic end generated code: output=4fcd8d0c2cc43bee input=a9049054013a1b77]*/
+diff --git a/Objects/listobject.c b/Objects/listobject.c
+index 8a9c9bda682..52466896309 100644
+--- a/Objects/listobject.c
++++ b/Objects/listobject.c
+@@ -1189,6 +1189,26 @@ list_insert_impl(PyListObject *self, Py_ssize_t index, PyObject *object)
+     return NULL;
+ }
+ 
++/*[clinic input]
++@critical_section
++list.prepend
++
++    object: object
++    /
++
++Insert object at the beginning of the list.
++[clinic start generated code]*/
++
++static PyObject *
++list_prepend_impl(PyListObject *self, PyObject *object)
++/*[clinic end generated code: output=1e8a17b6bb55190f input=feeb380796fc6769]*/
++{
++    if (ins1(self, 0, object) == 0) {
++        Py_RETURN_NONE;
++    }
++    return NULL;
++}
++
+ /*[clinic input]
+ @critical_section
+ list.clear as py_list_clear
+@@ -3603,6 +3623,7 @@ static PyMethodDef list_methods[] = {
+     LIST_COPY_METHODDEF
+     LIST_APPEND_METHODDEF
+     LIST_INSERT_METHODDEF
++    LIST_PREPEND_METHODDEF
+     LIST_EXTEND_METHODDEF
+     LIST_POP_METHODDEF
+     LIST_REMOVE_METHODDEF
+-- 
+2.53.0
+
