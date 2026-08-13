@@ -1,0 +1,47 @@
+name: Sync website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          path: profile
+
+      - name: Check out website repository
+        uses: actions/checkout@v4
+        with:
+          repository: diegorusso/diegorusso.github.io
+          ref: main
+          path: website
+          ssh-key: ${{ secrets.WEBSITE_DEPLOY_KEY }}
+
+      - name: Sync website homepage
+        run: website/tools/sync-profile-readme.sh "$GITHUB_WORKSPACE/profile/README.md"
+
+      - name: Commit and push website changes
+        working-directory: website
+        run: |
+          if git diff --quiet -- index.md; then
+            echo "index.md is already up to date"
+            exit 0
+          fi
+
+          git config user.name "Diego Russo"
+          git config user.email "me@diegor.it"
+          git add -- index.md
+          git commit -m "Sync homepage from profile README"
+          git push origin HEAD:main
