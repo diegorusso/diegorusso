@@ -40,6 +40,8 @@
 
 ## 🎧 Podcasts
 
+- **2026 - Puentes Digitales (UNSa): Programa 217 parte 2 ( :argentina: )**<br>
+  [Spotify](https://open.spotify.com/episode/1BkoYQtJAKZiCeHwZNEsck)
 - **2025 - Intervista Pythonista: Runtime e Interpreter con un Core Developer! #66 ( :it: )**<br>
   [YouTube](https://www.youtube.com/watch?v=Xx09D359mR4) | [Spotify](https://creators.spotify.com/pod/profile/marco-santoni/episodes/Runtime-e-Interpreter-con-un-Core-Developer--66-e35gcjl) | [Apple Podcast](https://podcasts.apple.com/lu/podcast/runtime-e-interpreter-con-un-core-developer-66/id1561566952?i=1000717070862)
 - **2024 - Arm Innovation Coffee: GitHub Arm-hosted Runners with Larissa Fortuna and Diego Russo**<br>
