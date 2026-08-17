@@ -22,7 +22,7 @@
 - **EuroPython 2026: Python on WoA - Ecosystem Enablement Update**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-python_on_woa-ecosystem_enablement_update.pdf) | *YouTube Coming soon...*
 - **PyCon Italia 2026 Keynote: From "Fast Enough" to "Fast by Design" - The Evolution of CPython Performance**<br>
-  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/pycon_italia_2026-evolution_of_cpython_performance.pdf) | *YouTube Coming soon...*
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/pycon_italia_2026-evolution_of_cpython_performance.pdf) | [YouTube](https://youtu.be/MnByufVL0bE)
 - **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código ( :argentina: )**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/python_sdq_python_por_dentro.pdf) | [YouTube](https://www.youtube.com/watch?v=PbLSttImQ3k)
 
