@@ -18,9 +18,9 @@
 - **UNSa 2026: Gobernanza y desarrollo de CPython ( :argentina: )**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/unsa_2026-gobernanza_y_desarrollo_de_cpython.pdf) | [Demo code](https://github.com/diegorusso/diegorusso/tree/main/2026/unsa_demos) | [YouTube](https://www.youtube.com/watch?v=8JvlAnYXHvk)
 - **EuroPython 2026: Update on the CPython JIT - What to Expect in 3.15**<br>
-  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-update_on_the_cpython_jit-what_to_expect_in_315.pdf) | *YouTube Coming soon...*
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-update_on_the_cpython_jit-what_to_expect_in_315.pdf) | [YouTube](https://www.youtube.com/watch?v=QP9fiB_c8Kk)
 - **EuroPython 2026: Python on WoA - Ecosystem Enablement Update**<br>
-  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-python_on_woa-ecosystem_enablement_update.pdf) | *YouTube Coming soon...*
+  [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/europython_2026-python_on_woa-ecosystem_enablement_update.pdf) | [YouTube](https://www.youtube.com/watch?v=6Gas3iAT9q0)
 - **PyCon Italia 2026 Keynote: From "Fast Enough" to "Fast by Design" - The Evolution of CPython Performance**<br>
   [Slides](https://github.com/diegorusso/diegorusso/blob/main/2026/pycon_italia_2026-evolution_of_cpython_performance.pdf) | [YouTube](https://youtu.be/MnByufVL0bE)
 - **Python SDQ January 2026 Meetup: Python por dentro: personas, procesos, código ( :argentina: )**<br>
