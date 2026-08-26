@@ -1,16 +1,21 @@
 ## 👋 About Me
 
-- :snake: I’m a [CPython](https://github.com/python/cpython/) Core Developer and Principal Software Engineer at [Arm Ltd](https://www.arm.com)
-- :computer: I work in Arm’s Runtimes team, helping CPython and its ecosystem perform reliably on Arm platforms
-- :microphone: I give talks about CPython internals, performance, and Python on Arm
-- :uk: I live in Cambridge, UK, and previously lived in Italy :it:
-- :speaking_head: I speak Italian :it:, Spanish :argentina:, and English :uk:
-- :page_facing_up: Read my [CV](https://www.diegor.it/cv/)
-- :zap: Find me on [LinkedIn](https://www.linkedin.com/in/diegor/), [Bluesky](https://bsky.app/profile/diegor.it), [X](https://x.com/diegor), and [Instagram](https://www.instagram.com/diegor.it/)
-- :memo: My [blog](https://www.diegor.it/posts/) is an archive; I stopped publishing there many years ago
-- :yin_yang: I practice Wing Chun
-- :man_dancing: I dance Cuban salsa
-- :male_sign: Pronouns: he/him/his
+**Work & speaking**<br>
+:snake: I’m a [CPython](https://github.com/python/cpython/) Core Developer and Principal Software Engineer at [Arm Ltd](https://www.arm.com)<br>
+:computer: I work in Arm’s Runtimes team, helping CPython and its ecosystem perform reliably on Arm platforms<br>
+:microphone: I give talks about CPython internals, performance, and Python on Arm
+
+**Profile & links**<br>
+:uk: I live in Cambridge, UK, and previously lived in Italy :it:<br>
+:speaking_head: I speak Italian :it:, Spanish :argentina:, and English :uk:<br>
+:page_facing_up: Read my [CV](https://www.diegor.it/cv/)<br>
+:zap: Find me on [LinkedIn](https://www.linkedin.com/in/diegor/), [Bluesky](https://bsky.app/profile/diegor.it), [X](https://x.com/diegor), and [Instagram](https://www.instagram.com/diegor.it/)<br>
+:memo: My [blog](https://www.diegor.it/posts/) is an archive; I stopped publishing there many years ago
+
+**Beyond work**<br>
+:yin_yang: I practice Wing Chun<br>
+:man_dancing: I dance Cuban salsa<br>
+:male_sign: Pronouns: he/him/his
 
 ## 🎤 Conference Talks & Panels
 
